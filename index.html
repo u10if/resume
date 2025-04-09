@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiarash Gholamalizadeh - Web Developer | Resume</title>
+    <meta name="description" content="Professional resume of Kiarash Gholamalizadeh, experienced Web Developer specializing in responsive design, modern frameworks, and full-stack development.">
+    <meta name="keywords" content="web developer, frontend developer, react developer, javascript developer, full stack developer, UI/UX, responsive design, SEO analyst, search engine optimization, Tehran">
+    <meta name="author" content="Kiarash Gholamalizadeh">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Kiarash Gholamalizadeh - Web Developer Resume">
+    <meta property="og:description" content="Professional resume of Kiarash Gholamalizadeh, experienced Web Developer specializing in responsive design, modern frameworks, and full-stack development.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Kiarash Gholamalizadeh - Web Developer Resume">
+    <meta name="twitter:description" content="Professional resume of Kiarash Gholamalizadeh, experienced Web Developer specializing in responsive design, modern frameworks, and full-stack development.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #3b82f6;
+            --text-color: #333;
+            --light-gray: #f5f5f5;
+            --medium-gray: #e5e7eb;
+            --dark-gray: #6b7280;
+            --accent-color: #dbeafe;
+        }
+        
+        @media print {
+            body {
+                background: white !important;
+                background-image: none !important;
+                max-width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .container {
+                box-shadow: none !important;
+                margin: 0 !important;
+                padding: 15px !important;
+                border: none !important;
+            }
+            
+            .skills-list li:hover {
+                transform: none !important;
+                box-shadow: none !important;
+            }
+            
+            a {
+                text-decoration: none !important;
+                color: var(--text-color) !important;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #f8fafc;
+            background-image: radial-gradient(var(--accent-color) 0.5px, #f8fafc 0.5px);
+            background-size: 20px 20px;
+            padding: 0;
+            max-width: 800px;
+            margin: 0 auto;
+            scroll-behavior: smooth;
+        }
+        
+        .container {
+            padding: 2.5rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+            background-color: white;
+            margin: 2rem auto;
+            border-radius: 12px;
+            border: 1px solid var(--medium-gray);
+        }
+        
+        header {
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--medium-gray);
+            padding-bottom: 1.5rem;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text-color);
+            letter-spacing: -0.5px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.25rem;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+            color: var(--dark-gray);
+        }
+        
+        .contact-info a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all 0.2s ease;
+            position: relative;
+        }
+        
+        .contact-info a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .contact-info a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: var(--secondary-color);
+            transition: width 0.2s ease;
+        }
+        
+        .contact-info a:hover::after {
+            width: 100%;
+        }
+        
+        .contact-info i {
+            color: var(--primary-color);
+            margin-right: 0.3rem;
+        }
+        
+        .location {
+            color: var(--dark-gray);
+            font-size: 0.9rem;
+        }
+        
+        section {
+            margin-bottom: 2rem;
+        }
+        
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 1.25rem;
+            color: var(--primary-color);
+            border-bottom: 1px solid var(--medium-gray);
+            padding-bottom: 0.5rem;
+            letter-spacing: -0.3px;
+        }
+        
+        .summary {
+            margin-bottom: 1.5rem;
+        }
+        
+        .skills-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 0.75rem;
+            list-style-type: none;
+        }
+        
+        .skills-list li {
+            background-color: var(--accent-color);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(37, 99, 235, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .skills-list li:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        
+        .skills-list strong {
+            color: var(--primary-color);
+        }
+        
+        .experience-item, .education-item, .project-item, .certification-item {
+            margin-bottom: 1.75rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px dashed var(--medium-gray);
+        }
+        
+        .experience-item:last-child, .education-item:last-child, .project-item:last-child, .certification-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+        
+        .job-title, .degree, .project-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+            color: var(--text-color);
+        }
+        
+        .company, .school {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+            color: var(--dark-gray);
+            margin-bottom: 0.75rem;
+        }
+        
+        .project-link {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all 0.2s ease;
+            font-size: 0.85rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+        
+        .project-link a:hover {
+            color: var(--secondary-color);
+        }
+        
+        .project-tag {
+            font-size: 0.7rem;
+            font-weight: 500;
+            background-color: var(--accent-color);
+            color: var(--primary-color);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+            border: 1px solid rgba(37, 99, 235, 0.2);
+        }
+        
+        .certification-name {
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--text-color);
+        }
+        
+        .certification-issuer {
+            font-size: 0.85rem;
+            color: var(--dark-gray);
+            margin-top: 0.2rem;
+        }
+        
+        ul {
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        
+        section ul li::marker {
+            color: var(--primary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 1rem;
+                padding: 1.5rem;
+                border-radius: 8px;
+            }
+            
+            h1 {
+                font-size: 1.8rem;
+            }
+            
+            h2 {
+                font-size: 1.3rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+            
+            .skills-list {
+                grid-template-columns: 1fr;
+            }
+            
+            .company, .school {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Kiarash Gholamalizadeh</h1>
+            <div class="contact-info">
+                <a href="mailto:kiarash@mail.com"><i class="far fa-envelope"></i> kiarash@mail.com</a>
+                <span><i class="fas fa-phone-alt"></i> (98) 911-2468085</span>
+                <a href="https://www.linkedin.com/in/kaiia/" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/kaiia</a>
+                <a href="https://github.com/u10if" target="_blank"><i class="fab fa-github"></i> github.com/u10if</a>
+                <span><i class="fas fa-map-marker-alt"></i> Tehran, Iran</span>
+            </div>
+        </header>
+        
+        <section>
+            <h2>Professional Summary</h2>
+            <div class="summary">
+                Creative and detail-oriented Web Developer and SEO Analyst with a passion for crafting clean, responsive, and user-friendly websites. Skilled in modern front-end and back-end technologies, search engine optimization, delivering high-quality code, and collaborating with teams to build awesome digital experiences that rank well in search results.
+            </div>
+        </section>
+        
+        <section>
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li><strong>Languages:</strong> PHP, HTML5, CSS3, JavaScript (ES6+), TypeScript, Python, SQL</li>
+                <li><strong>Frameworks & Libraries:</strong> React, Next.js, Vue.js, Node.js, Express, Tailwind CSS, Bootstrap</li>
+                <li><strong>Tools:</strong> Git, GitHub Actions, VS Code, Figma, Webpack, Docker</li>
+                <li><strong>Backend:</strong> MongoDB, Firebase, AWS, RESTful APIs, GraphQL</li>
+                <li><strong>SEO:</strong> Keyword Research, Google Analytics, Search Console, Technical SEO, Content Optimization</li>
+                <li><strong>Other:</strong> Responsive Design, Agile Development, UI/UX Design, Performance Optimization</li>
+            </ul>
+        </section>
+        
+        <section>
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <div class="job-title">Web Developer</div>
+                <div class="company">
+                    <span>Freelance</span>
+                    <span>Jan 2018 – Present</span>
+                </div>
+                <ul>
+                    <li>Designed and developed 10+ responsive websites for clients using HTML, CSS, JavaScript, and React.</li>
+                    <li>Optimized web performance, achieving 90+ scores on Google Lighthouse.</li>
+                    <li>Collaborated with clients to translate ideas into clean, functional, and visually appealing designs.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-title">SEO Analyst</div>
+                <div class="company">
+                    <span>Digital Marketing Agency</span>
+                    <span>Mar 2020 – Present</span>
+                </div>
+                <ul>
+                    <li>Conducted comprehensive keyword research and competitive analysis to improve website rankings.</li>
+                    <li>Implemented on-page and technical SEO optimizations, increasing organic traffic by 45%.</li>
+                    <li>Monitored website analytics and created detailed performance reports using Google Analytics and Search Console.</li>
+                    <li>Collaborated with content team to develop SEO-friendly content strategies and optimize existing web pages.</li>
+                </ul>
+            </div>
+            
+            <div class="experience-item">
+                <div class="job-title">Junior Web Developer</div>
+                <div class="company">
+                    <span>TechStartup Inc.</span>
+                    <span>Jun 2021 – Dec 2022</span>
+                </div>
+                <ul>
+                    <li>Built and maintained dynamic web applications using Node.js and Express.</li>
+                    <li>Implemented UI designs with Tailwind CSS, ensuring pixel-perfect accuracy.</li>
+                    <li>Contributed to a team of 5 developers in an Agile environment, delivering projects on tight deadlines.</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section>
+            <h2>Education</h2>
+            <div class="education-item">
+                <div class="degree">Master's degree in Political Science and Government</div>
+                <div class="school">
+                    <span>Shahid Beheshti University</span>
+                    <span>Oct 2021 – Aug 2023</span>
+                </div>
+            </div>
+                        
+           
+        </section>
+        
+        <section>
+            <h2>Certifications</h2>
+            <div class="certification-item">
+                <div class="certification-name">Certified React Developer</div>
+                <div class="certification-issuer">Udemy (2023)</div>
+            </div>
+            <div class="certification-item">
+                <div class="certification-name">Responsive Web Design</div>
+                <div class="certification-issuer">freeCodeCamp (2022)</div>
+            </div>
+            <div class="certification-item">
+                <div class="certification-name">AWS Cloud Practitioner</div>
+                <div class="certification-issuer">Amazon Web Services (2021)</div>
+            </div>
+            <div class="certification-item">
+                <div class="certification-name">JavaScript Algorithms and Data Structures</div>
+                <div class="certification-issuer">freeCodeCamp (2022)</div>
+            </div>
+            
+        </section>
+    </div>
+    
+    <div class="nav-links" style="display: flex; justify-content: center; margin: 1rem auto 2rem; max-width: 800px;">
+        <a href="cover-letter.html" style="color: var(--primary-color); text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 500; transition: all 0.2s ease; background-color: white; padding: 0.75rem 1.5rem; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.05); border: 1px solid var(--medium-gray);"><i class="fas fa-envelope"></i> View Cover Letter</a>
+    </div>
+</body>
+</html>
