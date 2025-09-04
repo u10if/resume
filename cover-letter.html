@@ -3,10 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kiarash Gholamalizadeh - Cover Letter</title>
-    <meta name="description" content="Professional cover letter of Kiarash Gholamalizadeh, experienced Web Developer specializing in responsive design, modern frameworks, and full-stack development.">
-    <meta name="author" content="Kiarash Gholamalizadeh">
-    <meta name="robots" content="index, follow">
+    <title>Kiarash Gholamalizadeh - Cover Letter | Digital Data Analytics Specialist</title>
+    <meta name="description" content="Cover letter for Digital Data Analytics Specialist position by Kiarash Gholamalizadeh">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -60,7 +58,6 @@
             padding: 0;
             max-width: 800px;
             margin: 0 auto;
-            scroll-behavior: smooth;
         }
         
         .container {
@@ -73,24 +70,30 @@
         }
         
         header {
-            margin-bottom: 2.5rem;
+            margin-bottom: 2rem;
             border-bottom: 1px solid var(--medium-gray);
             padding-bottom: 1.5rem;
         }
         
         h1 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.5rem;
             color: var(--text-color);
             letter-spacing: -0.5px;
+        }
+        
+        .position {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 1rem;
         }
         
         .contact-info {
             display: flex;
             flex-wrap: wrap;
             gap: 1.25rem;
-            margin-bottom: 1rem;
             font-size: 0.9rem;
             color: var(--dark-gray);
         }
@@ -99,26 +102,10 @@
             color: var(--primary-color);
             text-decoration: none;
             transition: all 0.2s ease;
-            position: relative;
         }
         
         .contact-info a:hover {
             color: var(--secondary-color);
-        }
-        
-        .contact-info a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 1px;
-            bottom: -2px;
-            left: 0;
-            background-color: var(--secondary-color);
-            transition: width 0.2s ease;
-        }
-        
-        .contact-info a:hover::after {
-            width: 100%;
         }
         
         .contact-info i {
@@ -126,53 +113,52 @@
             margin-right: 0.3rem;
         }
         
-        .location {
+        .date {
+            text-align: right;
+            margin-bottom: 2rem;
             color: var(--dark-gray);
             font-size: 0.9rem;
         }
         
-        .cover-letter {
-            margin-bottom: 2rem;
+        .letter-content {
+            font-size: 1rem;
+            line-height: 1.7;
         }
         
-        .date {
+        .letter-content p {
             margin-bottom: 1.5rem;
-            color: var(--dark-gray);
         }
         
-        .recipient {
-            margin-bottom: 1.5rem;
-            line-height: 1.4;
+        .letter-content p:last-child {
+            margin-bottom: 0;
         }
         
         .greeting {
-            margin-bottom: 1.5rem;
             font-weight: 500;
-        }
-        
-        .paragraph {
-            margin-bottom: 1.25rem;
-            text-align: justify;
+            margin-bottom: 1.5rem;
         }
         
         .closing {
             margin-top: 2rem;
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
+            font-weight: 500;
         }
         
         .signature {
+            margin-top: 1rem;
             font-weight: 600;
-            color: var(--text-color);
+            color: var(--primary-color);
+        }
+        
+        .highlight {
+            font-weight: 600;
+            color: var(--primary-color);
         }
         
         .nav-links {
             display: flex;
-            justify-content: space-between;
-            margin-top: 2.5rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--medium-gray);
+            justify-content: center;
+            margin: 1rem auto 2rem;
+            max-width: 800px;
         }
         
         .nav-links a {
@@ -183,10 +169,17 @@
             gap: 0.5rem;
             font-weight: 500;
             transition: all 0.2s ease;
+            background-color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            border: 1px solid var(--medium-gray);
         }
         
         .nav-links a:hover {
             color: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
         
         @media (max-width: 768px) {
@@ -197,12 +190,16 @@
             }
             
             h1 {
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
             
             .contact-info {
                 flex-direction: column;
                 gap: 0.5rem;
+            }
+            
+            .date {
+                text-align: left;
             }
         }
     </style>
@@ -211,52 +208,41 @@
     <div class="container">
         <header>
             <h1>Kiarash Gholamalizadeh</h1>
+            <div class="position">Digital Data Analytics Specialist Application</div>
             <div class="contact-info">
                 <a href="mailto:kiarash@mail.com"><i class="far fa-envelope"></i> kiarash@mail.com</a>
                 <span><i class="fas fa-phone-alt"></i> (98) 911-2468085</span>
                 <a href="https://www.linkedin.com/in/kaiia/" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/kaiia</a>
-                <a href="https://github.com/u10if" target="_blank"><i class="fab fa-github"></i> github.com/u10if</a>
                 <span><i class="fas fa-map-marker-alt"></i> Tehran, Iran</span>
             </div>
         </header>
         
-        <div class="cover-letter">
-            <div class="date">April 9, 2025</div>
-            
-
-            </div>
-            
-            <div class="greeting">Dear Hiring Manager,</div>
-            
-            <div class="paragraph">
-                I am writing to express my interest in the Web Developer position at your Company. With over 8 years of experience in web development and SEO analysis, I am confident that my technical skills and creative approach would make me a valuable addition to your team.
-            </div>
-            
-            <div class="paragraph">
-                As a detail-oriented web developer with a passion for creating clean, responsive, and user-friendly websites, I have successfully designed and developed numerous web applications using modern technologies such as PHp, react, and Node.js. My experience as an SEO Analyst has also given me a unique perspective on creating websites that not only look great but also perform well in search engine rankings.
-            </div>
-            
-            <div class="paragraph">
-                Throughout my career, I have demonstrated strong problem-solving abilities and a commitment to delivering high-quality code. I have optimized web performance to achieve 90+ scores on Google Lighthouse and implemented SEO strategies that increased organic traffic by 45%. I am particularly proud of my ability to collaborate effectively with clients and team members to translate ideas into functional and visually appealing designs.
-            </div>
-            
-            <div class="paragraph">
-                I am excited about the opportunity to bring my technical expertise and creative vision to your Company. I believe that my skills and experience would make me an asset to your team and help you achieve your goals.
-            </div>
-            
-            <div class="paragraph">
-                Thank you for considering my application. I would welcome the opportunity to discuss how my skills and experience align with your needs. I look forward to hearing from you.
-            </div>
-            
-            <div class="closing">
-                <div>Sincerely,</div>
-                <div class="signature">Kiarash Gholamalizadeh</div>
-            </div>
+        <div class="date">
+            September 4, 2025
         </div>
         
-        <div class="nav-links">
-            <a href="index.html"><i class="fas fa-file-alt"></i> View Resume</a>
+        <div class="letter-content">
+            <div class="greeting">Dear Hiring Manager,</div>
+            
+            <p>I am writing to express my strong interest in the <span class="highlight">Digital Data Analytics Specialist</span> position at your organization. With over 6 years of experience in web development and digital marketing, combined with my expertise in SEO analytics and data-driven optimization, I am excited about the opportunity to contribute to your team's success in extracting meaningful insights from digital data.</p>
+            
+            <p>In my current role as an <span class="highlight">SEO Analyst at a Digital Marketing Agency</span> since March 2020, I have developed strong analytical skills that directly align with your requirements. I have conducted comprehensive keyword research and competitive analysis, implemented technical SEO optimizations that increased organic traffic by 45%, and created detailed performance reports using <span class="highlight">Google Analytics and Search Console</span>. This experience has given me deep expertise in interpreting web data and translating complex metrics into actionable business insights.</p>
+            
+            <p>My technical background as a Web Developer has equipped me with the foundational skills necessary for this role. I am proficient in <span class="highlight">JavaScript, Python, and SQL</span>, and have extensive experience working with databases including MongoDB and Firebase. Through my freelance work, I have optimized web performance for 10+ websites, achieving 90+ scores on Google Lighthouse, which required deep analysis of user behavior data and performance metrics to identify optimization opportunities.</p>
+            
+            <p>What sets me apart is my ability to bridge the gap between technical data analysis and business strategy. In my previous role as a Junior Web Developer at TechStartup Inc., I collaborated closely with cross-functional teams in an Agile environment, contributing to data-driven decision making processes. I have experience with A/B testing methodologies and have consistently delivered projects that required analyzing user journeys and funnel performance to optimize conversion rates.</p>
+            
+            <p>I am particularly drawn to this role because it combines my passion for data analysis with my experience in digital platforms. My background in both mobile and web technologies, coupled with my analytical mindset and attention to detail, positions me well to excel in developing dashboards, tracking KPIs, and providing the insights that drive business growth.</p>
+            
+            <p>I would welcome the opportunity to discuss how my unique combination of technical expertise, analytical skills, and collaborative approach can contribute to your organization's data-driven strategies. Thank you for considering my application.</p>
+            
+            <div class="closing">Sincerely,</div>
+            <div class="signature">Kiarash Gholamalizadeh</div>
         </div>
+    </div>
+    
+    <div class="nav-links">
+        <a href="#" onclick="window.history.back()"><i class="fas fa-arrow-left"></i> Back to Resume</a>
     </div>
 </body>
 </html>
